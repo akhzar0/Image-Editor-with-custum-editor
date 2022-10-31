@@ -69,18 +69,23 @@ const Navbar = () => {
                     Manage Users
                   </NavLink>
                 </li>
+                <li className="nav-item">
+                  <NavLink className="nav-link" to="/image">
+                    Image Editor
+                  </NavLink>
+                </li>
               </ul>
               {/* Left links */}
               <div className="d-flex align-items-center">
-                <button type="button" className="btn btn-link px-3 me-2">
+                {/* <button type="button" className="btn btn-link px-3 me-2">
                   Login
-                </button>
-                <button type="button" className="btn btn-primary me-3">
+                </button> */}
+                {/* <button type="button" className="btn btn-primary me-3">
                   Sign up for free
-                </button>
-                <a className="btn btn-dark px-3" href="https://github.com/mdbootstrap/mdb-ui-kit" role="button">
+                </button> */}
+                {/* <a className="btn btn-dark px-3" href="https://github.com/mdbootstrap/mdb-ui-kit" role="button">
                   <i className="fab fa-github" />
-                </a>
+                </a> */}
               </div>
             </div>
             {/* Collapsible wrapper */}

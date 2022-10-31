@@ -16,6 +16,7 @@ function App() {
             <Route element={<Signup />} path="signup" />
             <Route element={<ImageEditor />} path="imageeditor" />
             <Route element={<Editor />} path="editor" />
+            <Route element={<ImageEditor/>} path="image" />
 
             {/* <Route element={<NotFound />} path="*" /> */}
           </Routes>

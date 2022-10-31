@@ -142,17 +142,17 @@ const FilterSlider = ({ options, updateFilterOptions, index }) => {
     <div>
       <div
         className="editor-cont margin-below-navbar "
-        style={{ background: "#1a3847" }}
+        style={{ background: "#fff" }}
       >
-        <p className="page-title" style={{ color: "white" }}>
-          Image Editor
+        <p className="page-title fs-1 text-center fw-bold" style={{ color: "" }}>
+          Image Editor <small className="fs-6 text-info">Akhzar</small>
         </p>
         <div className="container-fluid">
           <div className="row">
             <div className="col-md-2">
               <div className="card saved-filters">
-                <div className="card-body" style={{ background: "#00b894" }}>
-                  <h5 className="text-center fw-bold">Available Filters</h5>
+                <div className="card-body" style={{ background: "#fff" }}>
+                  <h5 className="text-center fs-5 mt-5">Available Filters</h5>
                   <hr />
                   <Filters
                     loading={loading}
@@ -165,18 +165,12 @@ const FilterSlider = ({ options, updateFilterOptions, index }) => {
                 </div>
               </div>
             </div>
-            <div className="col-md-7">
-              <div className="card editor" style={{ background: "#EEDD82" }}>
+            <div className="col-md-7 mt-5">
+              <div className="card editor" style={{ background: "#eee" }}>
               
                 <div className="card-body">
                   
-                <label
-                    className="select"
-                    htmlFor="uploader"
-                    
-                  >
-                    <b>Select File</b>
-                  </label>
+                
                   <input
                     className=""
                     
@@ -191,13 +185,19 @@ const FilterSlider = ({ options, updateFilterOptions, index }) => {
                  
                 </div>
                 
-                
               </div>
+              <label
+                    className="btn btn-primary ms-5 mt-3 "
+                    htmlFor="uploader"
+                    
+                  >
+                    <b>Select File</b>
+                  </label>
               
             </div>
             <div className="col-md-3">
-              <div className="card editor-toolbox">
-                <div className="card-body" style={{ background: "#EEDD82" }}>
+              <div className="card editor-toolbox mt-5">
+                <div className="card-body" style={{ background: "#eee" }}>
                   <div class="accordion" id="accordion-filter">
                     <div class="accordion-item">
                       <h2 class="accordion-header" id="heading-filter">
@@ -259,7 +259,7 @@ const FilterSlider = ({ options, updateFilterOptions, index }) => {
                               className="btn btn-success input-group-append"
                               onClick={saveCustomFilter}
                             >
-                              <i class="fas fa-save    "></i>
+                              <i class="fas fa-save"></i>
                             </button>
                           </div>
                         </div>
